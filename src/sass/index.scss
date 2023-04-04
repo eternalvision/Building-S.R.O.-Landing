@@ -1,5 +1,6 @@
-@import url("https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import "./utils/normalize";
 @import "./utils/root";
 @import "./utils/App";
 @import "./components/Header";
+@import "./components/Main";

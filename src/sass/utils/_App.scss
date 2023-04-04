@@ -4,18 +4,7 @@
     padding: 0;
     font-family: "Fira Sans", sans-serif !important;
     color: var(--black-color);
-    transition-property: all;
-    transition-duration: 0.3s;
-    transition-delay: 0ms;
-    transition-timing-function: ease;
-}
-
-li {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
+    transition: 0.1s;
 }
 
 html,

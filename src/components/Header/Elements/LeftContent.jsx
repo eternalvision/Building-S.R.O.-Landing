@@ -1,6 +1,6 @@
 import React from "react";
 
-function LeftContent() {
+export const LeftContent = () => {
     return (
         <li className="Left-header__els">
             <a href="/">
@@ -10,14 +10,12 @@ function LeftContent() {
                     </li>
                     <li>
                         <ul className="Logo-title">
-                            <li>Название компании</li>
-                            <li>Визитка строительной компании</li>
+                            <li>Natallia - Building S.R.O.</li>
+                            <li>Stavební firma</li>
                         </ul>
                     </li>
                 </ul>
             </a>
         </li>
     );
-}
-
-export default LeftContent;
+};
