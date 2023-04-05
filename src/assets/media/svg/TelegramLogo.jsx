@@ -1,4 +1,4 @@
-export const TelegramLogo = () => {
+const TelegramLogo = () => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -10,3 +10,5 @@ export const TelegramLogo = () => {
         </svg>
     );
 };
+
+export default TelegramLogo;

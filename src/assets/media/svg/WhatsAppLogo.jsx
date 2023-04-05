@@ -1,4 +1,4 @@
-export const WhatsAppLogo = () => {
+const WhatsAppLogo = () => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -9,3 +9,5 @@ export const WhatsAppLogo = () => {
         </svg>
     );
 };
+
+export default WhatsAppLogo;

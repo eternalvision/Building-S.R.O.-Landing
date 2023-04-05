@@ -1,6 +1,5 @@
 import React from "react";
-import { Images } from "../../../assets/images/Images";
-import { PointerLogo } from "../../../assets/svgs/PointerLogo";
+import { Media } from "../../../assets/media/Media";
 
 export const OurServices = () => {
     return (
@@ -11,7 +10,7 @@ export const OurServices = () => {
                 <li>
                     <div>
                         <div>
-                            <Images.Card1Image />
+                            <Media.ExampleImg />
                         </div>
                     </div>
                     <section>
@@ -23,14 +22,14 @@ export const OurServices = () => {
                         </p>
                         <button>
                             <span>Spojit se s námi</span>
-                            <PointerLogo />
+                            <Media.PointerLogo />
                         </button>
                     </section>
                 </li>
                 <li>
                     <div>
                         <div>
-                            <Images.Card2Image />
+                            <Media.ExampleImg />
                         </div>
                     </div>
                     <section>
@@ -41,14 +40,14 @@ export const OurServices = () => {
                         </p>
                         <button>
                             <span>Spojit se s námi</span>
-                            <PointerLogo />
+                            <Media.PointerLogo />
                         </button>
                     </section>
                 </li>
                 <li>
                     <div>
                         <div>
-                            <Images.Card3Image />
+                            <Media.ExampleImg />
                         </div>
                     </div>
                     <section>
@@ -59,14 +58,14 @@ export const OurServices = () => {
                         </p>
                         <button>
                             <span>Spojit se s námi</span>
-                            <PointerLogo />
+                            <Media.PointerLogo />
                         </button>
                     </section>
                 </li>
                 <li>
                     <div>
                         <div>
-                            <Images.Card4Image />
+                            <Media.ExampleImg />
                         </div>
                     </div>
                     <section>
@@ -74,14 +73,14 @@ export const OurServices = () => {
                         <p>Instalace elektroinstalace v bytovém domě.</p>
                         <button>
                             <span>Spojit se s námi</span>
-                            <PointerLogo />
+                            <Media.PointerLogo />
                         </button>
                     </section>
                 </li>
                 <li>
                     <div>
                         <div>
-                            <Images.Card4Image />
+                            <Media.ExampleImg />
                         </div>
                     </div>
                     <section>
@@ -92,14 +91,14 @@ export const OurServices = () => {
                         </p>
                         <button>
                             <span>Spojit se s námi</span>
-                            <PointerLogo />
+                            <Media.PointerLogo />
                         </button>
                     </section>
                 </li>
                 <li>
                     <div>
                         <div>
-                            <Images.Card4Image />
+                            <Media.ExampleImg />
                         </div>
                     </div>
                     <section>
@@ -117,7 +116,7 @@ export const OurServices = () => {
                         </p>
                         <button>
                             <span>Spojit se s námi</span>
-                            <PointerLogo />
+                            <Media.PointerLogo />
                         </button>
                     </section>
                 </li>

@@ -1,12 +1,11 @@
-import { Images } from "../../../assets/images/Images";
-import { PointerLogo } from "../../../assets/svgs/PointerLogo";
+import { Media } from "../../../assets/media/Media";
 
 export const TitleForm = () => {
     return (
         <ul>
             <li>
                 <div>
-                    <Images.MainImage />
+                    <Media.MainTitleImage />
                 </div>
                 <div>
                     <section>
@@ -14,7 +13,7 @@ export const TitleForm = () => {
                         <p>poskytujeme celou škálu služeb</p>
                         <button>
                             <span>Spojit se s námi</span>
-                            <PointerLogo />
+                            <Media.PointerLogo />
                         </button>
                     </section>
                 </div>

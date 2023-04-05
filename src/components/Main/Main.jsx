@@ -2,6 +2,7 @@ import React from "react";
 import { ContactLinks } from "./Elements/ContactLinks";
 import { TitleForm } from "./Elements/TitleForm";
 import { OurServices } from "./Elements/OurServices";
+import { AboutUs } from "./Elements/AboutUs";
 
 export const Main = () => {
     return (
@@ -14,6 +15,9 @@ export const Main = () => {
             </section>
             <section className="Our-Services">
                 <OurServices />
+            </section>
+            <section className="About-Us">
+                <AboutUs />
             </section>
         </main>
     );

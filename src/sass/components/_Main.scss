@@ -1,10 +1,5 @@
-main,
-header,
-footer {
-    section {
-        // max-width: 1700px;
-        margin: 0 5%;
-    }
+main {
+    margin-top: 150px;
 }
 
 .Contact-links {
@@ -30,17 +25,16 @@ footer {
 .Telegram-link {
     padding: 2px 12px 0px 0px;
     background-color: var(--blue-color);
-    fill: var(--bg-color);
+    fill: var(--white-color-bg);
     span {
-        color: var(--bg-color);
+        color: var(--white-color-bg);
     }
     &:hover {
         svg {
             fill: var(--blue-color);
         }
-        background-color: var(--bg-color);
-        box-shadow: 0px 0px 0px 1px var(--blue-color),
-            var(--box-shadow-hover-btn);
+        background-color: var(--white-color-bg);
+        box-shadow: 0px 0px 0px 1px var(--blue-color), var(--box-shadow);
         span {
             color: var(--blue-color);
         }
@@ -50,18 +44,17 @@ footer {
 .Viber-link {
     background-color: var(--pirple-color);
     padding: 9px 12px;
-    fill: var(--bg-color);
+    fill: var(--white-color-bg);
     span {
         margin-left: 10px;
-        color: var(--bg-color);
+        color: var(--white-color-bg);
     }
     &:hover {
         svg {
             fill: var(--pirple-color);
         }
-        background-color: var(--bg-color);
-        box-shadow: 0px 0px 0px 1px var(--pirple-color),
-            var(--box-shadow-hover-btn);
+        background-color: var(--white-color-bg);
+        box-shadow: 0px 0px 0px 1px var(--pirple-color), var(--box-shadow);
         span {
             color: var(--pirple-color);
         }
@@ -74,18 +67,18 @@ footer {
     display: flex;
     align-items: center;
     padding: 9px 12px;
-    fill: var(--bg-color);
+    fill: var(--white-color-bg);
     span {
         margin-left: 10px;
-        color: var(--bg-color);
+        color: var(--white-color-bg);
     }
     &:hover {
         svg {
             fill: var(--green-additional-color);
         }
-        background-color: var(--bg-color);
+        background-color: var(--white-color-bg);
         box-shadow: 0px 0px 0px 1px var(--green-additional-color),
-            var(--box-shadow-hover-btn);
+            var(--box-shadow);
         span {
             color: var(--green-additional-color);
         }
@@ -93,6 +86,8 @@ footer {
 }
 
 .Title-Form {
+    margin: 0 4%;
+
     ul {
         display: flex;
         justify-content: center;
@@ -118,11 +113,12 @@ footer {
                     right: 0;
                     bottom: 0;
                     position: absolute;
-                    background-color: #00000086;
+                    background-color: var(--black-transparent);
                     border-radius: var(--border-radius);
                     backdrop-filter: blur(5px);
                     section {
-                        padding: 10% 0px 0px 0px;
+                        padding: 0px;
+                        margin-top: 11%;
                         h1 {
                             margin: 0;
                             font-size: 4vw;
@@ -159,12 +155,12 @@ footer {
                                 }
                             }
                             &:hover {
-                                background-color: var(--header-bg-color);
-                                box-shadow: var(--box-shadow-hover-btn);
+                                background-color: var(--white-color);
+                                box-shadow: var(--box-shadow);
                                 cursor: pointer;
                                 svg {
                                     path {
-                                        fill: var(--header-bg-color);
+                                        fill: var(--white-color);
                                     }
                                 }
                             }
@@ -207,9 +203,10 @@ footer {
 .Services-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin: 0 4%;
 
     li {
-        background-color: var(--header-bg-color);
+        background-color: var(--white-color);
         border-radius: var(--border-radius);
         display: flex;
         margin: 10px;
@@ -258,7 +255,8 @@ footer {
                 right: 0;
                 border: none;
                 outline: none;
-                background-color: var(--header-bg-color);
+                background-color: transparent;
+                backdrop-filter: blur(15px);
                 border-radius: var(--border-radius);
                 padding: 10px;
                 margin: 0 10px 10px 0;
@@ -271,7 +269,7 @@ footer {
                         fill: var(--yellow-color);
                     }
                     path {
-                        fill: var(--header-bg-color);
+                        fill: var(--white-color);
                     }
                 }
                 &:hover {
@@ -288,12 +286,53 @@ footer {
                         }
                     }
                     cursor: pointer;
-                    box-shadow: 0px 0px 0px 2px var(--header-bg-color);
+                    box-shadow: 0px 0px 0px 2px var(--white-color);
                 }
             }
         }
         &:hover {
-            box-shadow: var(--box-shadow-hover-btn);
+            // box-shadow: var(--box-shadow);
+        }
+    }
+}
+
+.AboutUs-title {
+    margin-top: 80px;
+    background-color: var(--black-color);
+    display: flex;
+    justify-content: center;
+    padding: 70px 70px 50px 70px;
+    li {
+        margin: 20px;
+        display: flex;
+        align-items: center;
+        div {
+            margin-right: 15px;
+            svg {
+                padding: 10px;
+                width: 70px;
+                height: 70px;
+                border-radius: var(--border-radius);
+                fill: var(--black-color);
+                background-color: var(--white-color-bg);
+            }
+        }
+        span {
+            font-weight: 600;
+            font-size: 20px;
+            color: var(--white-color-bg);
+        }
+        &:hover {
+            cursor: pointer;
+            div {
+                svg {
+                    background-color: var(--black-color);
+                    fill: var(--white-color-bg);
+                    transform: scale(1.1);
+                    box-shadow: 0px 0px 0px 1px var(--white-color-bg),
+                        var(--box-shadow);
+                }
+            }
         }
     }
 }

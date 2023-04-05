@@ -1,7 +1,6 @@
 import React from "react";
-import { ViberLogo } from "../../../assets/svgs/ViberLogo";
-import { WhatsAppLogo } from "../../../assets/svgs/WhatsAppLogo";
-import { TelegramLogo } from "../../../assets/svgs/TelegramLogo";
+import { Media } from "../../../assets/media/Media";
+
 import { phoneNumber } from "../../Header/Elements/RightContent";
 
 export const ContactLinks = () => {
@@ -16,7 +15,7 @@ export const ContactLinks = () => {
                     className="Viber-link"
                     rel="noreferrer"
                     target="_blank">
-                    <ViberLogo />
+                    <Media.ViberLogo />
                     <span>Napište nám na Viber</span>
                 </a>
             </li>
@@ -26,7 +25,7 @@ export const ContactLinks = () => {
                     className="WhatsApp-link"
                     rel="noreferrer"
                     target="_blank">
-                    <WhatsAppLogo />
+                    <Media.WhatsAppLogo />
                     <span>Napište nám na WhatsApp</span>
                 </a>
             </li>
@@ -36,7 +35,7 @@ export const ContactLinks = () => {
                     className="Telegram-link"
                     rel="noreferrer"
                     target="_blank">
-                    <TelegramLogo />
+                    <Media.TelegramLogo />
                     <span>Napište nám na Telegram</span>
                 </a>
             </li>
