@@ -14,12 +14,12 @@ function App() {
         setIsOpen(false);
     };
     return (
-        <React.Fragment>
+        <>
+            <Modal isOpen={isOpen} onClose={closeModal} />
             <Header openModal={openModal} />
             <Main openModal={openModal} />
             <Footer />
-            <Modal isOpen={isOpen} onClose={closeModal} />
-        </React.Fragment>
+        </>
     );
 }
 

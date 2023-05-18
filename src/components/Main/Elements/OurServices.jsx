@@ -3,7 +3,7 @@ import { Media } from "../../../assets/media/Media";
 
 export const OurServices = ({ openModal }) => {
     return (
-        <React.Fragment>
+        <>
             <p>NABÍZÍME</p>
             <h2>Naše služby</h2>
             <ul className="Services-list">
@@ -121,6 +121,6 @@ export const OurServices = ({ openModal }) => {
                     </section>
                 </li>
             </ul>
-        </React.Fragment>
+        </>
     );
 };

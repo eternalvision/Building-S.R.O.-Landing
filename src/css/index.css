@@ -152,6 +152,8 @@ textarea {
   font-size: 100%; /* 1 */
   line-height: 1.15; /* 1 */
   margin: 0; /* 2 */
+  border: none;
+  outline: none;
 }
 
 /**
@@ -905,7 +907,9 @@ main {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--black-transparent);
+  -webkit-backdrop-filter: var(--blur);
+          backdrop-filter: var(--blur);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -919,11 +923,9 @@ main {
 }
 
 .Modal-Content {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 4px;
-  -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  background-color: var(--white-color);
+  padding: 20px 0px 20px 20px;
+  border-radius: var(--border-radius) 9px 9px var(--border-radius);
   position: relative;
 }
 
@@ -933,10 +935,106 @@ main {
   right: 10px;
   font-size: 18px;
   cursor: pointer;
+  border: none;
+  outline: none;
+  -webkit-transition: -webkit-transform 800ms 0ms ease;
+  transition: -webkit-transform 800ms 0ms ease;
+  transition: transform 800ms 0ms ease;
+  transition: transform 800ms 0ms ease, -webkit-transform 800ms 0ms ease;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: var(--transparent);
+  z-index: 2;
+}
+.Modal-Close svg {
+  width: 18px;
+  height: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.Modal-Close svg path {
+  fill: var(--white-color);
+}
+.Modal-Close:hover {
+  -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(180deg);
+          transform: rotateX(0deg) rotateY(0deg) rotateZ(180deg);
 }
 
-.Close:hover {
-  color: red;
+.Modal-List__Content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.Modal-List__Content li h3 {
+  text-align: center;
+  font-size: 25px;
+  margin: 20px 0;
+}
+
+.Form-List li label input,
+.Form-List li label textarea {
+  border: 1px solid var(--bg-color);
+  background-color: var(--white-color);
+  padding: 10px 20px;
+  font-size: 15px;
+  margin: 10px 0px 0px 0px;
+  border-radius: var(--border-radius);
+  height: 55px;
+  width: 100%;
+}
+.Form-List li label input:hover,
+.Form-List li label textarea:hover {
+  background-color: var(--bg-color);
+}
+.Form-List li label textarea {
+  padding-top: 15px;
+  height: 117px;
+  width: 330px;
+  resize: vertical;
+}
+
+.Form-Item__termsOfUse {
+  margin: 15px 0;
+}
+.Form-Item__termsOfUse label {
+  margin-left: 10px;
+}
+
+.Form-Item__Button input {
+  padding: 20px;
+  width: 100%;
+  border-radius: var(--border-radius);
+  font-weight: bold;
+  background-color: #fecb00;
+}
+.Form-Item__Button input:hover {
+  cursor: pointer;
+  background-color: var(--yellow-color);
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+}
+
+.Modal-Item__Image ul li:first-child {
+  position: absolute;
+  background-color: var(--black-transparent);
+  width: 360px;
+  border-radius: 0 var(--border-radius) var(--border-radius) 0;
+  top: 0;
+  right: 0px;
+  bottom: 0;
+  z-index: 1;
+}
+.Modal-Item__Image ul li:last-child {
+  position: relative !important;
+}
+.Modal-Item__Image ul li:last-child img {
+  width: 360px;
+  height: 360px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: 30px;
+  border-radius: var(--border-radius);
 }
 
 .Zoom {
