@@ -343,7 +343,10 @@ main {
     display: flex;
     justify-content: center;
     max-height: 564px;
-    margin: 50px 4% 0;
+    padding-bottom: 40px;
+    margin: 40px auto;
+    max-width: 1100px;
+    border-bottom: 2px solid #c6c6c6;
     li {
         margin: 10px;
         &:last-child {
@@ -376,6 +379,44 @@ main {
             &:last-child {
                 p {
                     margin-top: 20px;
+                }
+            }
+        }
+    }
+}
+
+.Merit-list {
+    display: flex;
+    justify-content: center;
+}
+
+.Merit-list__items {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    li {
+        &:first-child {
+            margin-right: 20px;
+            svg {
+                width: 42px;
+                height: 42px;
+            }
+        }
+        &:last-child {
+            ul {
+                li {
+                    &:first-child {
+                        font-weight: bold;
+                    }
+                    &:last-child {
+                        font-size: 3vw;
+                        line-height: normal;
+                        font-weight: 800;
+                        color: var(--yellow-color);
+                        span {
+                            color: var(--yellow-color);
+                        }
+                    }
                 }
             }
         }

@@ -321,9 +321,9 @@ template {
 }
 
 :root {
-  --bg-color: #e9e9e9;
+  --bg-color: #efefef;
   --white-color: #fff;
-  --white-color-bg: #e9e9e9;
+  --white-color-bg: #efefef;
   --white-color-transparent: #ffffff9f;
   --black-color: #19191b;
   --black-transparent: #00000099;
@@ -869,7 +869,10 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
   max-height: 564px;
-  margin: 50px 4% 0;
+  padding-bottom: 40px;
+  margin: 40px auto;
+  max-width: 1100px;
+  border-bottom: 2px solid #c6c6c6;
 }
 .AboutUs-info li {
   margin: 10px;
@@ -899,6 +902,44 @@ main {
 }
 .AboutUs-info__title ul li:last-child p {
   margin-top: 20px;
+}
+
+.Merit-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Merit-list__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px;
+}
+.Merit-list__items li:first-child {
+  margin-right: 20px;
+}
+.Merit-list__items li:first-child svg {
+  width: 42px;
+  height: 42px;
+}
+.Merit-list__items li:last-child ul li:first-child {
+  font-weight: bold;
+}
+.Merit-list__items li:last-child ul li:last-child {
+  font-size: 3vw;
+  line-height: normal;
+  font-weight: 800;
+  color: var(--yellow-color);
+}
+.Merit-list__items li:last-child ul li:last-child span {
+  color: var(--yellow-color);
 }
 
 .Modal {

@@ -11,6 +11,9 @@ import ViberLogo from "./svg/ViberLogo";
 import WhatsAppLogo from "./svg/WhatsAppLogo";
 import WorkerLogo from "./svg/WorkerLogo";
 import CloseLogo from "./svg/CloseLogo";
+import MedalLogo from "./svg/MedalLogo";
+import RocketLogo from "./svg/RocketLogo";
+import MedallionLogo from "./svg/MedallionLogo";
 
 const MainTitleImage = () => {
     return <img className="Main-img" src={TitleImage} alt="" />;
@@ -41,4 +44,7 @@ export const Media = {
     WhatsAppLogo,
     WorkerLogo,
     CloseLogo,
+    MedalLogo,
+    RocketLogo,
+    MedallionLogo,
 };

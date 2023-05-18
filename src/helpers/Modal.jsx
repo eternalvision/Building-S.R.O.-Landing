@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Media } from "../../../assets/media/Media";
+import { Media } from "../assets/media/Media";
 
 export const Modal = ({ isOpen, onClose }) => {
     useEffect(() => {

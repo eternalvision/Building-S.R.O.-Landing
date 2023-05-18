@@ -1,4 +1,7 @@
+import React, { useState, useEffect, useRef } from "react";
 import { Media } from "../../../assets/media/Media";
+import { Counter } from "../../../helpers/Counter";
+
 export const AboutUs = () => {
     return (
         <ul>
@@ -74,11 +77,60 @@ export const AboutUs = () => {
                 </ul>
             </li>
             <li>
-                <hr />
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                <ul className="Merit-list">
+                    <li>
+                        <ul className="Merit-list__items">
+                            <li>
+                                <Media.MedalLogo />
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>Úspěšné aktivity</li>
+                                    <li>
+                                        <Counter endValue={7} duration={3000} />{" "}
+                                        let
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul className="Merit-list__items">
+                            <li>
+                                <Media.RocketLogo />
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>Realizované projekty</li>
+                                    <li>
+                                        <Counter
+                                            endValue={304}
+                                            duration={3000}
+                                        />
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul className="Merit-list__items">
+                            <li>
+                                <Media.MedallionLogo />
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>Klienti se stali partnery</li>
+                                    <li>
+                                        <Counter
+                                            endValue={126}
+                                            duration={3000}
+                                        />{" "}
+                                        +
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             </li>
         </ul>
