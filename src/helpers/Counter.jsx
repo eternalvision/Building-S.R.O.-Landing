@@ -10,18 +10,15 @@ export const Counter = ({ endValue, duration }) => {
             ([entry]) => {
                 if (entry.isIntersecting) {
                     let startTimestamp;
-
                     const startAnimation = (timestamp) => {
                         startTimestamp = timestamp;
                         animate(timestamp);
                     };
-
                     const animate = (timestamp) => {
                         const progress = timestamp - startTimestamp;
                         const increment = Math.ceil(
                             (endValue / duration) * progress
                         );
-
                         if (
                             progress < duration &&
                             count + increment <= endValue
@@ -32,17 +29,14 @@ export const Counter = ({ endValue, duration }) => {
                             setCount(endValue);
                         }
                     };
-
                     animationFrameId = requestAnimationFrame(startAnimation);
                 }
             },
             { threshold: 1 }
         );
-
         if (targetRef.current) {
             observer.observe(targetRef.current);
         }
-
         return () => {
             if (targetRef.current) {
                 observer.unobserve(targetRef.current);

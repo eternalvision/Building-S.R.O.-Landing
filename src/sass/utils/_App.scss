@@ -5,6 +5,9 @@
     font-family: "Fira Sans", sans-serif !important;
     color: var(--black-color);
     transition: 0.1s;
+    &:focus-visible {
+        outline: none;
+    }
 }
 
 html,

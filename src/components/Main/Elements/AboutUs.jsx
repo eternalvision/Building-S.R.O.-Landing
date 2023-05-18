@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
 import { Media } from "../../../assets/media/Media";
 import { Counter } from "../../../helpers/Counter";
 

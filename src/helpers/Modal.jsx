@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import { Media } from "../assets/media/Media";
 
 export const Modal = ({ isOpen, onClose }) => {

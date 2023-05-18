@@ -3,6 +3,7 @@ import { ContactLinks } from "./Elements/ContactLinks";
 import { TitleForm } from "./Elements/TitleForm";
 import { OurServices } from "./Elements/OurServices";
 import { AboutUs } from "./Elements/AboutUs";
+import { Gallery } from "./Elements/Gallery";
 
 export const Main = ({ openModal }) => {
     return (
@@ -19,6 +20,9 @@ export const Main = ({ openModal }) => {
                 </li>
                 <li className="About-Us Fade-Bottom">
                     <AboutUs />
+                </li>
+                <li className="Gallery Fade-Bottom">
+                    <Gallery />
                 </li>
             </ul>
         </main>
