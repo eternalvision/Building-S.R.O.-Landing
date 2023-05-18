@@ -1,7 +1,7 @@
 import React from "react";
 import { Media } from "../../../assets/media/Media";
 
-export const OurServices = () => {
+export const OurServices = ({ openModal }) => {
     return (
         <React.Fragment>
             <p>NABÍZÍME</p>
@@ -20,7 +20,7 @@ export const OurServices = () => {
                             objektu a specialisté provedou práce dle požadavků a
                             přání klienta.
                         </p>
-                        <button>
+                        <button onClick={openModal}>
                             <span>Spojit se s námi</span>
                             <Media.PointerLogo />
                         </button>
@@ -38,7 +38,7 @@ export const OurServices = () => {
                             Proces, při kterém se pozemek promění v obytný dům
                             připravený k bydlení.
                         </p>
-                        <button>
+                        <button onClick={openModal}>
                             <span>Spojit se s námi</span>
                             <Media.PointerLogo />
                         </button>
@@ -56,7 +56,7 @@ export const OurServices = () => {
                             Typ nástěnné dekorace, která má vlastní vlastnosti
                             hladkého povrchu s jemným leskem.
                         </p>
-                        <button>
+                        <button onClick={openModal}>
                             <span>Spojit se s námi</span>
                             <Media.PointerLogo />
                         </button>
@@ -71,7 +71,7 @@ export const OurServices = () => {
                     <section>
                         <h4>Rozvod elektřiny v domě</h4>
                         <p>Instalace elektroinstalace v bytovém domě.</p>
-                        <button>
+                        <button onClick={openModal}>
                             <span>Spojit se s námi</span>
                             <Media.PointerLogo />
                         </button>
@@ -89,7 +89,7 @@ export const OurServices = () => {
                             Instalace vodovodního systému v budově nebo
                             zařízení.
                         </p>
-                        <button>
+                        <button onClick={openModal}>
                             <span>Spojit se s námi</span>
                             <Media.PointerLogo />
                         </button>
@@ -114,7 +114,7 @@ export const OurServices = () => {
                             nebo kamenných desek na stěny, podlahy a další
                             vnitřní povrchy.
                         </p>
-                        <button>
+                        <button onClick={openModal}>
                             <span>Spojit se s námi</span>
                             <Media.PointerLogo />
                         </button>

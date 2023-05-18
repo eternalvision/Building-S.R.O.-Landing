@@ -1,6 +1,6 @@
 import { Media } from "../../../assets/media/Media";
 
-export const TitleForm = () => {
+export const TitleForm = ({ openModal }) => {
     return (
         <ul>
             <li>
@@ -11,7 +11,7 @@ export const TitleForm = () => {
                     <section>
                         <h1>Konstrukce</h1>
                         <p>poskytujeme celou škálu služeb</p>
-                        <button>
+                        <button onClick={openModal}>
                             <span>Spojit se s námi</span>
                             <Media.PointerLogo />
                         </button>
