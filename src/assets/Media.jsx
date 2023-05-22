@@ -3,6 +3,7 @@ import ExampleImage from "./jpg/ExampleImage.jpg";
 import AboutUsImage from "./jpg/AboutUsImage.jpg";
 import FormImg from "./jpg/FormImage.jpg";
 
+import Logo from "./svg/Logo";
 import LineLogo from "./svg/LineLogo";
 import PaintLogo from "./svg/PaintLogo";
 import PointerLogo from "./svg/PointerLogo";
@@ -36,6 +37,7 @@ export const Media = {
     AboutUsImg,
     MainTitleImage,
     FormImage,
+    Logo,
     LineLogo,
     PaintLogo,
     PointerLogo,

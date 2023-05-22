@@ -1,8 +1,6 @@
 import React from "react";
-import { Media } from "../../../assets/media/Media";
-import { Counter } from "../../../helpers/Counter";
 
-export const AboutUs = () => {
+export const AboutUs = ({ Helpers, Media }) => {
     return (
         <ul>
             <li>
@@ -87,7 +85,10 @@ export const AboutUs = () => {
                                 <ul>
                                     <li>Úspěšné aktivity</li>
                                     <li>
-                                        <Counter endValue={7} duration={3000} />{" "}
+                                        <Helpers.Counter
+                                            endValue={7}
+                                            duration={3000}
+                                        />{" "}
                                         let
                                     </li>
                                 </ul>
@@ -103,7 +104,7 @@ export const AboutUs = () => {
                                 <ul>
                                     <li>Realizované projekty</li>
                                     <li>
-                                        <Counter
+                                        <Helpers.Counter
                                             endValue={304}
                                             duration={3000}
                                         />
@@ -121,7 +122,7 @@ export const AboutUs = () => {
                                 <ul>
                                     <li>Klienti se stali partnery</li>
                                     <li>
-                                        <Counter
+                                        <Helpers.Counter
                                             endValue={126}
                                             duration={3000}
                                         />{" "}

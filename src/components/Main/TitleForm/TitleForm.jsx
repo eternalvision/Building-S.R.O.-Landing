@@ -1,7 +1,6 @@
 import React from "react";
-import { Media } from "../../../assets/media/Media";
 
-export const TitleForm = ({ openModal }) => {
+export const TitleForm = ({ openModal, Media }) => {
     return (
         <ul>
             <li>

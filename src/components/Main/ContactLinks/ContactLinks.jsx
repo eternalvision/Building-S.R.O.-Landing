@@ -1,9 +1,7 @@
 import React from "react";
-import { Media } from "../../../assets/media/Media";
 
-import { phoneNumber } from "../../Header/Elements/RightContent";
-
-export const ContactLinks = () => {
+var phoneNumber = "+420776766906";
+export const ContactLinks = ({ Media }) => {
     if (!phoneNumber.startsWith("+420")) {
         phoneNumber = `+420${phoneNumber}`;
     }

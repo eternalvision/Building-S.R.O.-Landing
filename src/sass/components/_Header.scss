@@ -25,6 +25,15 @@ header {
     width: 60px;
     height: 60px;
     margin-right: 20px;
+
+    svg {
+        width: 60px;
+        height: 60px;
+        g {
+            fill: var(--black-color);
+            transform: scale(1.9);
+        }
+    }
 }
 
 .Left-header__els {

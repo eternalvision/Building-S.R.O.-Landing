@@ -1,12 +1,12 @@
 import React from "react";
 
-export const LeftContent = () => {
+export const LeftContent = ({ Media }) => {
     return (
         <li className="Left-header__els">
             <a href="/">
                 <ul className="Logo">
                     <li className="Logo-image">
-                        <img width={60} height={60} src="" alt="" />
+                        <Media.Logo />
                     </li>
                     <li>
                         <ul className="Logo-title">

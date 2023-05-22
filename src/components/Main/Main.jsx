@@ -1,25 +1,25 @@
 import React from "react";
-import { ContactLinks } from "./Elements/ContactLinks";
-import { TitleForm } from "./Elements/TitleForm";
-import { OurServices } from "./Elements/OurServices";
-import { AboutUs } from "./Elements/AboutUs";
-import { Gallery } from "./Elements/Gallery";
+import { AboutUs } from "./AboutUs/AboutUs";
+import { ContactLinks } from "./ContactLinks/ContactLinks";
+import { Gallery } from "./Gallery/Gallery";
+import { OurServices } from "./OurServices/OurServices";
+import { TitleForm } from "./TitleForm/TitleForm";
 
-export const Main = ({ openModal }) => {
+export const Main = ({ openModal, Media, Helpers }) => {
     return (
         <main>
             <ul>
                 <li className="Contact-links Zoom">
-                    <ContactLinks />
+                    <ContactLinks Media={Media} />
                 </li>
                 <li className="Title-Form Zoom Fade-Top">
-                    <TitleForm openModal={openModal} />
+                    <TitleForm openModal={openModal} Media={Media} />
                 </li>
                 <li className="Our-Services Fade-Bottom">
-                    <OurServices openModal={openModal} />
+                    <OurServices openModal={openModal} Media={Media} />
                 </li>
                 <li className="About-Us Fade-Bottom">
-                    <AboutUs />
+                    <AboutUs Helpers={Helpers} Media={Media} />
                 </li>
                 <li className="Gallery Fade-Bottom">
                     <Gallery />

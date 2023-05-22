@@ -1,7 +1,6 @@
 import React from "react";
-import { Media } from "../../../assets/media/Media";
 
-export const OurServices = ({ openModal }) => {
+export const OurServices = ({ Media, openModal }) => {
     return (
         <>
             <p>NABÍZÍME</p>

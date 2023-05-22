@@ -20,32 +20,10 @@
     }
 }
 
-.Gallery-image__block {
+.Slider-container {
+    padding: 0px 15%;
     img {
-        border-radius: var(--border-radius);
         object-fit: cover;
+        border-radius: var(--border-radius);
     }
-    &:hover {
-        img {
-            cursor: pointer;
-        }
-    }
-}
-
-.slick-next,
-.slick-prev {
-    z-index: 1;
-    &::before {
-        font-size: 40px;
-        color: var(--bg-color);
-        opacity: 1;
-    }
-}
-
-.slick-next {
-    right: 20px !important;
-}
-
-.slick-prev {
-    left: 20px !important;
 }

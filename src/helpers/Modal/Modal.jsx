@@ -1,14 +1,12 @@
 import React, { useEffect } from "react";
-import { Media } from "../assets/media/Media";
+import { Media } from "../../assets/Media";
 
 export const Modal = ({ isOpen, onClose }) => {
     useEffect(() => {
         const handleBodyScroll = () => {
             document.body.style.overflow = isOpen ? "hidden" : "auto";
         };
-
         handleBodyScroll();
-
         return () => {
             document.body.style.overflow = "auto";
         };
