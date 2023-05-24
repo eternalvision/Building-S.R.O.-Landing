@@ -1,0 +1,239 @@
+@media screen and (max-width: 1440px) {
+    .Main {
+        margin-top: 110px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .Main {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Main {
+        margin-top: 90px;
+    }
+    .AboutUs-info__image {
+        display: none;
+    }
+    .AboutUs-title {
+        li {
+            span {
+                font-size: 15px;
+            }
+            div {
+                svg {
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+        }
+    }
+    .Services-list {
+        li {
+            width: 520px;
+            height: auto;
+            &:last-child {
+                height: 250px;
+            }
+        }
+    }
+    .Consultation {
+        ul {
+            li {
+                div {
+                    justify-content: space-around;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+    .AboutUs-info__title {
+        ul {
+            li:first-child {
+                font-size: 3vw;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .Consultation {
+        display: none;
+    }
+
+    .Footer-list {
+        justify-content: space-around;
+        flex-direction: column;
+        li {
+            &:last-child {
+                ul {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .Footer-title {
+        display: none;
+    }
+
+    .Carousel {
+        padding-top: 25px;
+    }
+    .image-gallery {
+        padding: 5% 7%;
+    }
+    .Title-Form {
+        ul {
+            li {
+                div {
+                    &:last-child {
+                        backdrop-filter: blur(0px);
+                        section {
+                            margin-top: 4%;
+                            p {
+                                font-size: 15px;
+                            }
+                            button {
+                                padding: 6px 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .Modal-Content {
+        padding: 10px;
+    }
+
+    .Modal-Close {
+        top: 0px;
+        right: 0px;
+        svg {
+            path {
+                fill: var(--black-color);
+            }
+        }
+    }
+
+    .Modal-Item__Image {
+        display: none;
+    }
+
+    .Our-Services {
+        margin-top: 50px;
+        h2 {
+            margin-bottom: 5px;
+        }
+    }
+
+    .Main {
+        margin-top: 70px;
+    }
+    .Logo-image svg {
+        transform: scale(0.9);
+    }
+    .Right-Contacts {
+        li {
+            &:first-child {
+                display: none;
+            }
+        }
+    }
+    .Logo-title {
+        li {
+            display: none;
+        }
+    }
+    .Telegram-link {
+        padding-right: 5px;
+    }
+    .Link-list {
+        li {
+            a {
+                span {
+                    display: none;
+                }
+            }
+        }
+    }
+    .Services-list li {
+        width: 370px;
+        height: 200px;
+        &:last-child {
+            height: 320px;
+        }
+    }
+    .Merit-list {
+        padding: 0 5%;
+        flex-direction: column;
+    }
+
+    .AboutUs-title {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+        li {
+            margin: 25px 0px 25px 25px;
+        }
+    }
+    .Merit-list__items {
+        padding: 25px 0;
+        li {
+            ul {
+                li {
+                    font-size: 4.5vw !important;
+                    span {
+                        font-size: 6vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 325px) {
+    .Form-Item__Button input {
+        width: 75%;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .Modal-Content {
+        padding: 20px;
+    }
+    .Form-List li label input,
+    .Form-List li label textarea {
+        padding: 10px 10px;
+    }
+    .Form-List li label textarea {
+        width: 290px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .Our-Services {
+        margin-top: 10px;
+        p {
+            &:first-child {
+                display: none;
+            }
+        }
+        h2 {
+            display: none;
+        }
+    }
+    .Services-list {
+        li {
+            width: 290px;
+            height: 230px;
+            &:last-child {
+                height: 420px;
+            }
+        }
+    }
+}

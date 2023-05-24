@@ -4,7 +4,7 @@
     padding: 0;
     font-family: "Fira Sans", sans-serif !important;
     color: var(--black-color);
-    transition: 0.1s;
+    transition: 0.3s !important;
     &:focus-visible {
         outline: none;
     }
@@ -20,6 +20,8 @@ body {
     background-color: var(--bg-color);
 }
 
-ul {
-    padding: 0;
+#root {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }

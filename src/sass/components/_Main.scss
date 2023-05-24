@@ -1,5 +1,5 @@
-main {
-    margin-top: 150px;
+.Main {
+    margin-top: 120px;
 }
 
 .Contact-links {
@@ -87,7 +87,6 @@ main {
 
 .Title-Form {
     margin: 0 4%;
-
     ul {
         display: flex;
         justify-content: center;
@@ -184,6 +183,7 @@ main {
 
 .Our-Services {
     margin-top: 80px;
+    align-items: center;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -203,7 +203,6 @@ main {
 .Services-list {
     display: flex;
     justify-content: center;
-    margin: 0 4%;
     flex-wrap: wrap;
 
     li {
@@ -212,8 +211,9 @@ main {
         display: flex;
         margin: 10px;
         padding: 10px;
-        width: 600px;
-        min-height: 210px;
+
+        width: 760px;
+        height: 205px;
         position: relative;
         div {
             width: 10vw;
@@ -299,11 +299,11 @@ main {
 }
 
 .AboutUs-title {
-    margin-top: 80px;
+    margin-top: 8%;
     background-color: var(--black-color);
     display: flex;
     justify-content: center;
-    padding: 20px 70px 10px 70px;
+    padding: 1% 7% 1% 7%;
     li {
         margin: 50px;
         display: flex;
@@ -342,10 +342,9 @@ main {
 .AboutUs-info {
     display: flex;
     justify-content: center;
-    max-height: 564px;
+    flex-wrap: wrap;
     padding-bottom: 40px;
     margin: 40px auto;
-    max-width: 1100px;
     border-bottom: 2px solid #c6c6c6;
     li {
         margin: 10px;
@@ -417,6 +416,138 @@ main {
                             color: var(--yellow-color);
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+.Consultation {
+    margin: 80px 10%;
+    ul {
+        display: flex;
+        justify-content: center;
+        li {
+            position: relative;
+            border-radius: var(--border-radius);
+            div {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                &:first-child {
+                    max-width: 1200px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: var(--border-radius);
+                    }
+                }
+                &:last-child {
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    position: absolute;
+                    background-color: var(--black-transparent);
+                    border-radius: var(--border-radius);
+                    section {
+                        &:first-child {
+                            padding: 0px;
+                            h2 {
+                                margin: 0;
+                                font-size: 38px;
+                                color: var(--white-color);
+                                line-height: normal;
+                                font-weight: 600;
+                                letter-spacing: 2px;
+                                margin-bottom: 2%;
+                            }
+                            p {
+                                color: var(--yellow-color);
+                                font-weight: 600;
+                                font-size: 20px;
+                                width: 300px;
+                            }
+                            button {
+                                display: flex;
+                                align-items: center;
+                                margin-top: 20px;
+                                border: none;
+                                outline: none;
+                                border-radius: var(--border-radius);
+                                background-color: var(--yellow-color);
+                                font-size: 18px;
+                                padding: 12px 25px;
+                                span {
+                                    margin-top: 1px;
+                                    margin-right: 10px;
+                                }
+                                svg {
+                                    circle {
+                                        fill: var(--black-color);
+                                    }
+                                    path {
+                                        fill: var(--yellow-color);
+                                    }
+                                }
+                                &:hover {
+                                    background-color: var(--white-color);
+                                    box-shadow: var(--box-shadow);
+                                    cursor: pointer;
+                                    svg {
+                                        path {
+                                            fill: var(--white-color);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &:hover {
+                div {
+                    &:last-child {
+                        button {
+                            margin-left: 9px;
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.Consultation-form__list {
+    justify-content: flex-start !important;
+    li {
+        &:first-child {
+            input {
+                border: 1px solid var(--bg-color);
+                background-color: var(--white-color);
+                padding: 10px 20px;
+                font-size: 15px;
+                border-radius: var(--border-radius);
+                height: 55px;
+                width: 100%;
+                &:hover {
+                    background-color: var(--bg-color);
+                }
+            }
+        }
+        &:last-child {
+            margin-left: 20px;
+            input {
+                padding: 20px;
+                border-radius: var(--border-radius);
+                font-weight: bold;
+                background-color: #fecb00;
+                &:hover {
+                    cursor: pointer;
+                    background-color: var(--yellow-color);
+                    box-shadow: var(--box-shadow);
                 }
             }
         }

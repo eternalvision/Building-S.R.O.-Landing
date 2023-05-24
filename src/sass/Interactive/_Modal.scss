@@ -91,6 +91,7 @@
 }
 
 .Form-Item__Button {
+    margin-top: 10px;
     input {
         padding: 20px;
         width: 100%;
@@ -113,7 +114,7 @@
                 background-color: var(--black-transparent);
                 width: 360px;
                 border-radius: 0 var(--border-radius) var(--border-radius) 0;
-                // backdrop-filter: blur(3px);
+                backdrop-filter: blur(3px);
                 top: 0;
                 right: 0px;
                 bottom: 0;

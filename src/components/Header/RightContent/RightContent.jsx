@@ -1,12 +1,7 @@
 import React from "react";
-import { FcPhone } from "react-icons/fc";
 
-export let phoneNumber = "+420776766906";
-export const RightContent = ({ openModal }) => {
-    if (!phoneNumber.startsWith("+420")) {
-        phoneNumber = `+420${phoneNumber}`;
-    }
-
+export const RightContent = ({ Media, Helpers, openModal }) => {
+    const formattedPhoneNumber = Helpers.PhoneNumber();
     return (
         <>
             <li className="Right-Header__els">
@@ -18,12 +13,12 @@ export const RightContent = ({ openModal }) => {
                             </li>
                             <li className="Number-link">
                                 <a
-                                    href={`tel:${phoneNumber}`}
+                                    href={"tel:" + formattedPhoneNumber}
                                     target="_blank"
                                     rel="noreferrer">
-                                    <FcPhone />
+                                    <Media.FcPhone />
                                     <span>
-                                        {phoneNumber.replace(
+                                        {formattedPhoneNumber.replace(
                                             /(\+\d{3})(\d{3})(\d{3})(\d{3})/,
                                             "$1 $2 $3 $4"
                                         )}
@@ -33,7 +28,6 @@ export const RightContent = ({ openModal }) => {
                             <li>
                                 <button onClick={openModal}>
                                     <span>Požádejte o zavolání</span>
-                                    <div></div>
                                 </button>
                             </li>
                         </ul>

@@ -58,20 +58,7 @@ export const Modal = ({ isOpen, onClose }) => {
                                                         placeholder="Komentář"></textarea>
                                                 </label>
                                             </li>
-                                            <li className="Form-Item__termsOfUse">
-                                                <input
-                                                    required
-                                                    type="checkbox"
-                                                    name="termsOfUse"
-                                                    id="termsOfUse"
-                                                />
-                                                <label htmlFor="termsOfUse">
-                                                    <span>
-                                                        Přečtěte si uživatelskou
-                                                        smlouvu *
-                                                    </span>
-                                                </label>
-                                            </li>
+
                                             <li className="Form-Item__Button">
                                                 <input
                                                     type="button"

@@ -15,10 +15,10 @@ function App() {
     };
     return (
         <>
-            <Helpers.Modal isOpen={isOpen} onClose={onClose} />
-            <Header openModal={openModal} Media={Media} />
-            <Main openModal={openModal} Media={Media} Helpers={Helpers} />
-            <Footer />
+            <Header Helpers={Helpers} openModal={openModal} Media={Media} />
+            <Main Helpers={Helpers} openModal={openModal} Media={Media} />
+            <Footer Helpers={Helpers} openModal={openModal} Media={Media} />
+            <Helpers.Modal isOpen={isOpen} onClose={onClose} Media={Media} />
         </>
     );
 }

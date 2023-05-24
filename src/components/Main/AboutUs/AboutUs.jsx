@@ -1,23 +1,23 @@
 import React from "react";
 
-export const AboutUs = ({ Helpers, Media }) => {
+export const AboutUs = ({ Helpers, openModal, Media }) => {
     return (
         <ul>
             <li>
                 <ul className="AboutUs-title">
-                    <li>
+                    <li onClick={openModal}>
                         <div>
                             <Media.PaintLogo />
                         </div>
                         <span>Individuální přístup</span>
                     </li>
-                    <li>
+                    <li onClick={openModal}>
                         <div>
                             <Media.WorkerLogo />
                         </div>
                         <span>Bezplatné konzultace</span>
                     </li>
-                    <li>
+                    <li onClick={openModal}>
                         <div>
                             <Media.LineLogo />
                         </div>
@@ -65,7 +65,7 @@ export const AboutUs = ({ Helpers, Media }) => {
                             </li>
                         </ul>
                     </li>
-                    <li>
+                    <li className="AboutUs-info__image">
                         <ul>
                             <li>
                                 <Media.AboutUsImg />

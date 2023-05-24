@@ -2,14 +2,18 @@ import React from "react";
 import { LeftContent } from "./LeftContent/LeftContent";
 import { RightContent } from "./RightContent/RightContent";
 
-export const Header = ({ openModal, Media }) => {
+export const Header = ({ Helpers, openModal, Media }) => {
     return (
         <>
-            <header className="Fade-Top">
+            <header className="Fade-Top Header">
                 <section>
                     <ul className="Header-list">
                         <LeftContent Media={Media} />
-                        <RightContent openModal={openModal} />
+                        <RightContent
+                            Media={Media}
+                            Helpers={Helpers}
+                            openModal={openModal}
+                        />
                     </ul>
                 </section>
             </header>

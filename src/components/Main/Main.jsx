@@ -1,13 +1,14 @@
 import React from "react";
 import { AboutUs } from "./AboutUs/AboutUs";
 import { ContactLinks } from "./ContactLinks/ContactLinks";
-import { Gallery } from "./Gallery/Gallery";
+import { ContainerCarousel } from "./Carousel/Carousel";
 import { OurServices } from "./OurServices/OurServices";
 import { TitleForm } from "./TitleForm/TitleForm";
+import { Consultation } from "./Consultation/Consiltation";
 
 export const Main = ({ openModal, Media, Helpers }) => {
     return (
-        <main>
+        <main className="Main">
             <ul>
                 <li className="Contact-links Zoom">
                     <ContactLinks Media={Media} />
@@ -19,10 +20,17 @@ export const Main = ({ openModal, Media, Helpers }) => {
                     <OurServices openModal={openModal} Media={Media} />
                 </li>
                 <li className="About-Us Fade-Bottom">
-                    <AboutUs Helpers={Helpers} Media={Media} />
+                    <AboutUs
+                        Helpers={Helpers}
+                        openModal={openModal}
+                        Media={Media}
+                    />
                 </li>
-                <li className="Gallery Fade-Bottom">
-                    <Gallery />
+                <li className="Carousel Fade-Bottom">
+                    <ContainerCarousel />
+                </li>
+                <li className="Consultation Zoom">
+                    <Consultation Media={Media} />
                 </li>
             </ul>
         </main>
