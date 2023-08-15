@@ -1,0 +1,16 @@
+.AlertSection {
+    ul {
+        li {
+            display: flex;
+            align-items: center;
+            padding: 3px;
+            span {
+                font-size: 18px;
+                margin-left: 10px;
+            }
+            svg {
+                color: #d7dadc;
+            }
+        }
+    }
+}
